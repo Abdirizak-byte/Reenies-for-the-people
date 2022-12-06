@@ -297,7 +297,7 @@
      font-size: 20px;
      font-weight: bold;
      line-height: 22px;
-     color: #37baeb;
+     color: #693C5E;
 }
  .button_user li a {
     color: #fff;
@@ -329,8 +329,8 @@
      background: #000;
 }
  .button_user a:hover, .button_user a:focus, .button_user a.active {
-     background: #00aeef;
-     border-color: #00aeef;
+     background:  #840B55;
+     border-color:  #840B55;
      color: #fff;
 }
  #sidebarCollapse {
@@ -475,8 +475,8 @@
 }
  .text_box a:hover {
      color: #000;
-     background: #00aeef;
-     border: #00aeef solid 1px;
+     background:  #840B55;
+     border:  #840B55 solid 1px;
 }
 /** about **/
  .about {
@@ -491,7 +491,7 @@
  .about .about_box span {
      font-size: 17px;
      line-height: 28px;
-     color: #00aeef;
+     color:  #840B55;
      font-weight: bold;
      padding-bottom: 10px;
      display: block;
@@ -510,18 +510,18 @@
      font-weight: 400;
 }
  .about .about_box a {
-     color: #00aeef;
+     color:  #840B55;
      font-size: 17px;
      line-height: 29px;
      background: transparent;
-     border: #00aeef solid 1px;
+     border:  #840B55 solid 1px;
      padding: 12px 40px;
      display: inline-block;
 }
  .about .about_box a:hover {
      color: #fff;
-     background: #00aeef;
-     border: #00aeef solid 1px;
+     background:  #840B55;
+     border:  #840B55 solid 1px;
 }
  .about .about_img figure {
      margin: 0;
@@ -532,7 +532,7 @@
 /** end about **/
 /** service **/
  .service {
-    background: #5ab5dd;
+    background: #693C5E;
      padding: 60px 0px;
 }
  .service .ourheading {
@@ -652,11 +652,11 @@
      font-weight: 500;
 }
  .pricing .pricing_box .list a{
-     color: #00aeef;
+     color:  #840B55;
      font-size: 17px;
      line-height: 29px;
      background: transparent;
-     border: #00aeef solid 1px;
+     border:  #840B55 solid 1px;
      padding: 12px 40px;
      display: inline-block;
      float: right;
@@ -665,14 +665,14 @@
 }
  .pricing .pricing_box .list a:hover {
      color: #fff;
-     background: #00aeef;
-     border: #00aeef solid 1px;
+     background:  #840B55;
+     border:  #840B55 solid 1px;
 }
  .opening {
     padding: 80px 0 90px 0;
 }
  .opening_bg {
-    background: #37baebba;
+    background: #693C5Eba;
      padding: 59px 53px;
 }
  .times ul li {
@@ -727,7 +727,7 @@
      padding-bottom: 0px;
 }
  .white {
-     color: #00aeef;
+     color:  #840B55;
      font-weight: 500;
 }
  #white_coloe {
@@ -738,18 +738,18 @@
      opacity: 1;
 }
  .form-control {
-     border: #00aeef solid 2px;
+     border:  #840B55 solid 2px;
      border-radius: inherit;
      margin-bottom: 25px;
      padding: 12px 20px;
-     background: #00aeef;
+     background:  #840B55;
      color: #fff;
      font-family: poppins;
 }
  .form-control:focus {
      box-shadow: inherit;
-     border: #00aeef solid 2px !important;
-     background: #00aeef;
+     border:  #840B55 solid 2px !important;
+     background:  #840B55;
 }
  #search_bar {
      color: #fff !important;
@@ -757,19 +757,19 @@
 }
  .textarea {
      font-family: poppins;
-     border: #00aeef solid 2px;
+     border:  #840B55 solid 2px;
      margin-bottom: 25px;
      padding: 15px 20px;
      width: 100%;
      padding-top: 29px;
-     background: #00aeef;
+     background:  #840B55;
 }
  .send {
      font-family: poppins;
      float: left;
      margin: 0 auto;
      display: block;
-     background: #00aeef;
+     background:  #840B55;
      color: #fff;
      max-width: 165px;
      padding: 13px 0px;
@@ -845,7 +845,7 @@
      color: #000;
 }
  .owl-dot {
-     background: #15cfe5 !important;
+     background: #963821 !important;
      width: 25px;
      height: 25px;
      margin-bottom: 25px !important;
@@ -927,11 +927,11 @@
 }
  #sidebar ul li a:hover {
      color: #fff;
-     background: #17b4ee;
+     background:  #840B55;
 }
  #sidebar ul li.active > a, a[aria-expanded="true"] {
      color: #fff;
-     background: #17b4ee;
+     background:  #840B55;
 }
  a[data-toggle="collapse"] {
      position: relative;
@@ -999,5 +999,12 @@
      font-weight: bold;
      color: #fff;
      font-weight: 500;
+}
+
+.font_2{
+
+}
+.font_8{
+    size: 100px;
 }
  
