@@ -826,10 +826,10 @@
      font-weight: 500;
 }
  ul.lik li img:hover {
-     color: #00678d;
+     color: #693C5Eba;
 }
  .copyright {
-     background: #00678d;
+     background: #693C5Eba;
      margin-top: 90px;
 }
  .copyright p {
@@ -910,7 +910,7 @@
 }
  #sidebar .sidebar-header {
      padding: 20px;
-     background: #6d7fcc;
+     background: #693C5Eba;
 }
  #sidebar ul.components {
      padding: 55px 0;
@@ -946,7 +946,7 @@
  ul ul a {
      font-size: 0.9em !important;
      padding-left: 30px !important;
-     background: #6d7fcc;
+     background: #693C5Eba;
 }
  ul.CTAs {
      padding: 20px;
@@ -960,10 +960,10 @@
 }
  a.download {
      background: #fff;
-     color: #7386D5;
+     color: #77456bba;
 }
  a.article, a.article:hover {
-     background: #6d7fcc !important;
+     background: #693C5Eba !important;
      color: #fff !important;
 }
 /*--------------------------------------------------------------------- ener page css ---------------------------------------------------------------------*/
@@ -976,7 +976,7 @@
      font-weight: 500;
 }
  .yellow_bg {
-     background-color: #1993c0;
+     background-color: #840B55;
      padding: 40px 0px;
 }
  .yellow_bg .title {
@@ -1001,10 +1001,150 @@
      font-weight: 500;
 }
 
-.font_2{
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+.body2 {
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+  background-color: #693C5Eba;
+  display: flex;
 }
-.font_8{
-    size: 100px;
+
+.testimonial {
+  perspective-origin: 50% 50%;
+  perspective: 100em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  counter-reset: bubble 0;
+  overflow: hidden;
+  margin: 0;
+  background: #693C5Eba;
+  min-height: 400px;
+  flex-grow: 1;
+  transform: translateX(0) translateY(0) !important;
+ cursor: auto !important;
 }
- 
+.testimonial .testimonials {
+  position: absolute;
+  left: 50%;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  transform: translateZ(calc(var(--distance) * -1));
+  transition: transform ease-in-out 1s;
+  transform-style: preserve-3d;
+}
+.testimonial .arrow-left,
+.testimonial .arrow-right {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+  cursor: pointer;
+  color: #693C5Eba;
+  z-index: 2;
+  background: white;
+  padding: 5px;
+}
+.testimonial .arrow-left {
+  left: 0px;
+}
+.testimonial .arrow-right {
+  right: 0px;
+}
+.testimonial .navigation {
+  position: absolute;
+  bottom: 1em;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 3px;
+  cursor: pointer;
+}
+.testimonial .navigation .nav-dot {
+  padding: 3px;
+  background: #693C5Eba;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+.testimonial .navigation .focused {
+  background: white;
+}
+
+.chat-bubble {
+  padding: 2em;
+  width: min(400px, calc(100vw - 40px));
+  box-sizing: border-box;
+  background-color: white;
+  border-radius: 1em;
+  position: absolute;
+  transform: translateX(-50%) rotateY(var(--rotation))
+    translateZ(var(--distance));
+  transition: filter 1s ease;
+  backface-visibility: hidden;
+  pointer-events: none;
+  filter: blur(3px);
+}
+.chat-bubble.focused {
+  filter: blur(0px);
+  pointer-events: auto;
+}
+.chat-bubble i {
+  font-size: 30px;
+  color: #aaa;
+  margin-bottom: 0.5em;
+}
+.chat-bubble .person {
+  display: grid;
+  grid-template: auto auto/auto 1fr;
+  grid-column-gap: 0.4em;
+  margin-top: 1em;
+}
+.chat-bubble .person .img {
+  grid-row: 1/-1;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+}
+.chat-bubble .person .name {
+  font-weight: bold;
+  align-self: end;
+}
+.chat-bubble .person .role {
+  align-self: start;
+}
+.chat-bubble .content {
+  white-space: pre-wrap;
+  position: relative;
+  max-height: 175px;
+  padding: 5px 0;
+  overflow-y: auto;
+}
+.chat-bubble .content:w .truncated::after {
+  content: "";
+  position: absolute;
+  height: 3em;
+  width: 3em;
+  background-image: black;
+  top: 0;
+  left: 0;
+}
+.chat-bubble::after {
+  content: "";
+  position: absolute;
+  top: calc(100% - 1px);
+  left: 5%;
+  width: 25px;
+  height: 15px;
+  clip-path: polygon(0% 0%, 100% 0%, 50% 100%);
+  background-color: inherit;
+}
